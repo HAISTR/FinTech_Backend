@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # Database
-    DATABASE_URL: str = "sqlite:///./fintech.db"
+    DATABASE_URL: str = "postgresql://postgres:password@localhost:5432/fintech_db"
 
     # Security
     SECRET_KEY: str = "dev_secret_key_change_in_production"
